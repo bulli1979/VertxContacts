@@ -1,0 +1,36 @@
+<div class="container" ng-controller="EditController">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3">Kontakt bearbeiten</h3>		
+		</div>
+	</div>
+	<div class="panel panel-default" >
+		<div class="row">
+			<div class="col-md-1"></div>
+			<div class="col-md-5"><label>Vorname:<input type="text" class="form-control" name="firstname" ng-model="contact.firstname"></label></div>
+			<div class="col-md-1"></div>
+			<div class="col-md-5"><label>Name:<input type="text" class="form-control" name="name" ng-model="contact.name"></label></div>
+		</div>	
+		<div class="row">
+			<div class="col-md-1"></div>
+			<div class="col-md-5"><label>Strasse:<input type="text" class="form-control" name="street" ng-model="contact.street"></label></div>
+			<div class="col-md-1"></div>
+			<div class="col-md-5"><label>PLZ:<input type="text" class="form-control" name="zip" ng-model="contact.zip"></label></div>
+		</div>	
+		<div class="row">
+			<div class="col-md-1"></div>
+			<div class="col-md-11"><label>Ort:<input type="text" class="form-control" name="city" ng-model="contact.city"></label></div>
+		</div>	
+		<div class="row">
+			<div class="col-md-1"></div>
+			<div class="col-md-5">
+				<button class="btn btn-success" ng-click="save();">speichern</button>
+			</div>
+			<div class="col-md-1"></div>
+			<div class="col-md-5">
+				<button class="btn btn-default" ng-click="back();">zur Liste</button>
+			</div>
+		</div>	
+		
+	</div>
+</div>

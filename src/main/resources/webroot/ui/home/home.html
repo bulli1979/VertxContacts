@@ -1,0 +1,36 @@
+<div class="container" ng-controller="HomeController">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title">Kontaktliste</h3>		
+		</div>
+	</div>
+	<div class="panel panel-default" >
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>Vorname</th>
+					<th>Name</th>
+					<th>Strasse</th>
+					<th>PLZ</th>
+					<th>Stadt</th>
+					<th>bearbeiten</th>
+				</tr>
+			</thead>
+			<tbody ng-model="contactModel.model">
+				<tr ng-repeat="option in contactModel.availableOptions">
+					<td>{{option.firstname}}</td>
+					<td>{{option.name}}</td>
+					<td>{{option.street}}</td>
+					<td>{{option.zip}}</td>
+					<td>{{option.city}}</td>
+					<td><span ng-click="open(option)">bearbeiten</span></td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="row">
+			<div class="col-md-12">
+				<button class="btn btn-default" ng-click="newContact()">neuer Kontakt</button>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,101 @@
+body{ background-color: #fafafa; }
+
+.navbar { 
+	border-radius : 0px;
+	margin-bottom : 0px;
+ }
+.navbar .useravatar {
+	height: 20px;
+	width: 20px;
+	margin-right: 5px;	
+}
+
+.appsList .appContainer h4 {
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: bold;
+  overflow: hidden;
+  max-height: 70px;
+  padding-right: 2px;
+}
+
+.appsList .appContainer {
+  width: 300px;
+  height: 88px;
+  margin-right: 14px;
+  background-color: white;
+  transition: background-color 1s ease;
+  box-shadow: 1px 1px 5px #ccc;
+  position: relative;
+  top: 0px;
+
+}
+
+.appsList .appContainer:hover {
+  background-color: #F5F5F5;
+  transition: all 0.3s ease;
+  border-color: #bbb;
+  position: relative;
+  top: -3px;
+  box-shadow: 0px 5px 10px #ccc;
+}
+
+@media (max-width: 700px) {
+  .appsList .appContainer {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .appsList .appContainer {
+    border: 0;
+    box-shadow: none;
+    width: 93px;
+	height:97px;
+  }
+  .appsList .appContainer:hover {
+    border: 0;
+    box-shadow: none;
+    width: 93px;
+	height:97px;
+	background-color: white;
+	position: relative;
+	top: 0;
+  }
+  .appsList .appContainer h4 {
+    font-size: 9pt;
+    text-align: center;
+  }
+  .appsList .appContainer .btn-group {
+    display: none;
+  }
+}
+
+.appsList .appContainer p[content="description"] {
+  clear: both;
+  height: 40px;
+  overflow: hidden;
+  font-size: 10pt;
+}
+
+
+
+.bs-docs-footer {
+  background-color: #222;
+  color: #99979c;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.bs-docs-footer-links li {
+  display: inline-block;
+}
+
+footer .footerlogo {
+width: 120px;
+}
+
+.bs-docs-footer a {
+  color: #828282;
+}
